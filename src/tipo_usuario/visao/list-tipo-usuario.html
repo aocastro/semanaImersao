@@ -1,45 +1,43 @@
 <div class="row mt-5">
     <div class="col-12">
-        <div class="card shadow">
+        <div class="card shadow mt-5">
             <div class="card-header">
                 <div class="card-title">
                     <div class="row">
-                        <div class="col-md-9 col-12 mt-4">
+                        <div class="col-md-9 col-12">
                             <h4 class="text-danger">Gerenciar Tipos de usuários</h4>
                         </div>
-                        <div class="col-md-3 col-12 mt-4">
+                        <div class="col-md-3 col-12">
                             <button class="btn btn-dark btn-block btn-new">Adicionar</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="card-body">
+                <table class="table table-hover table-responsive-md" id="table-tipo-usuario">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="text-center">Id</th>
+                            <th scope="col" class="text-center">Nome</th>
+                            <th scope="col" class="text-center">Tipo</th>
+                            <th scope="col" class="text-center">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col" class="text-center">00</th>
+                            <th scope="col" class="text-center">Administrador do Sistema</th>
+                            <th scope="col" class="text-center">A</th>
+                            <th scope="col" class="text-center">
+                                <button class="btn btn-info btn-sm">R</button>
+                                <button class="btn btn-primary btn-sm">U</button>
+                                <button class="btn btn-danger btn-sm">D</button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-12">
-        <table class="table" id="table-tipo-usuario">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col ">Id</th>
-                    <th scope="col ">Nome</th>
-                    <th scope="col ">Tipo</th>
-                    <th scope="col ">Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="col ">Id</th>
-                    <th scope="col ">Nome</th>
-                    <th scope="col ">Tipo</th>
-                    <th scope="col ">
-                        <button>Visualizar</button>
-                        <button>Editar</button>
-                        <button>Excluir</button>
-                    </th>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </div>
 
