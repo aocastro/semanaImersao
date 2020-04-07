@@ -3,12 +3,12 @@
         <h4 class="text-danger">Gerenciar Tipos de usuários</h4>
     </div>
     <div class="col-md-3 col-12 mt-4">
-        <button class="btn btn-dark btn-block">Adicionar</button>
+        <button class="btn btn-dark btn-block btn-new">Adicionar</button>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
-        <table class="table table-hover table-responsive" id="table-tipo-usuario">
+        <table class="table" id="table-tipo-usuario">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col ">Id</th>
@@ -38,12 +38,18 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div class="modal-title">
-
+                    ...
                 </div>
             </div>
             <div class="modal-body">
                 <p>Content</p>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary btn-save">Salvar mudanças</button>
+            </div>
         </div>
     </div>
 </div>
+
+<script src="src/tipo_usuario/controle/new-tipo_usuario.js"></script>
