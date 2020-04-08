@@ -26,7 +26,7 @@
 
         $colunaOrdem = $requestData['order'][0]['column'];
         $ordem = $colunas[$colunaOrdem]['data'];
-        $direcao = $requestData['order']['dir'];
+        $direcao = $requestData['order'][0]['dir'];
 
         $inicio = $requestData['start'];
         $tamanho = $requestData['length'];
