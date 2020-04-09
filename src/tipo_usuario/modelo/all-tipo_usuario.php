@@ -11,7 +11,7 @@
         if($resultado){
             
             while($row = mysqli_fetch_assoc($resultado)){
-                $dados = array_map('utf8_encode', $row);
+                $dados[] = array_map('utf8_encode', $row);
             }
         }
 
