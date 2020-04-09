@@ -15,7 +15,7 @@ $(document).ready(function() {
         // e também podemos habilitar e desabilitar a ordenação e mecanismo de busca, bem como podemos adicionar alguma propriedade CSS na tabela
         "columns": [{
                 "data": 'idtipo_usuario',
-                "className": 'text-center'
+                "className": 'text-center' // Aqui é a inclusão da classe de alinhamento de texto do bootstrap, porém pode ser usado qualquer CSS
             },
             {
                 "data": 'nome',

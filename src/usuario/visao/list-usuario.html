@@ -1,0 +1,54 @@
+<div class="row mt-5">
+    <div class="col-12">
+        <div class="card shadow mt-5">
+            <div class="card-header">
+                <div class="card-title">
+                    <div class="row">
+                        <div class="col-md-9 col-12">
+                            <h4 class="text-danger">Gerenciar usuários</h4>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <button class="btn btn-dark btn-block btn-new">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-hover table-responsive-sm" id="table-usuario">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="text-center">Id</th>
+                            <th scope="col" class="text-center">Nome</th>
+                            <th scope="col" class="text-center">E-mail</th>
+                            <th scope="col" class="text-center">Tipo</th>
+                            <th scope="col" class="text-center">Ações</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-usuario" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    ...
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Content</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary btn-save">Salvar mudanças</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="src/usuario/controle/new-usuario.js"></script>
+<!-- <script src="src/tipo_usuario/controle/save-tipo_usuario.js"></script>
+<script src="src/tipo_usuario/controle/list-tipo_usuario.js"></script> -->
