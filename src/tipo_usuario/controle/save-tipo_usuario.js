@@ -31,6 +31,7 @@ $(document).ready(function() {
 
                 // Fechamento do modal
                 $('#modal-tipo-usuario').modal('hide')
+                $('#table-tipo_usuario').DataTable().ajax.reload()
             }
         })
 
