@@ -10,7 +10,7 @@
         $requestData = $_REQUEST;
 
         //Verifica se existe(m) campo(s) obrigatório(s) vazio(s)
-        if(empty($requestData['nome']) || empty($requestData['email']) || empty($requestData['email']) || empty($requestData['idtipo_usuario'])){
+        if(empty($requestData['nome']) || empty($requestData['email']) || empty($requestData['senha']) || empty($requestData['idtipo_usuario'])){
 
             //Caso exista, definir um objeto array para retorno
             $dados = array(
