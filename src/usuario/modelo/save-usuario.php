@@ -35,7 +35,7 @@
             if($operacao == 'insert'){
 
                 //Prepara o comando sql para executar o INSERT
-                $sql = "INSERT INTO USUARIOS(nome, email, senha, idtipo_usuario) VALUES ('$nome', '$email', '$senha', '$idIdUsuario')";
+                $sql = "INSERT INTO USUARIOS(nome, email, senha, idtipo_usuario) VALUES ('$nome', '$email', '$senha', '$idTipoUsuario')";
             } else { //Caso contrário, ou qualquer valor diferente de 'insert'
 
                 //Prepara o comando sql para executar o UPDATE
