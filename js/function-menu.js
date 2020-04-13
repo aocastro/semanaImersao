@@ -13,4 +13,9 @@ $(document).ready(function() {
         $('#conteudo').empty()
         $('#conteudo').load('src/categoria/visao/list-categoria.html')
     })
+
+    $('#noticia').click(function() {
+        $('#conteudo').empty()
+        $('#conteudo').load('src/noticia/visao/list-noticia.html')
+    })
 })
