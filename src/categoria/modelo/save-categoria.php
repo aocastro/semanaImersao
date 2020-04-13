@@ -23,7 +23,7 @@
             //manipular os dados da request
 
             //isset() testa se existe idtipo_usuario dentro da request
-            $idCategoria = isset($requestData['idcategoria']) ? $requestData['icategoria'] : ''; 
+            $idCategoria = isset($requestData['idcategoria']) ? $requestData['idcategoria'] : ''; 
             //utf8_decode() - decodifica string, assumido ser codificada em UTF-8, para ISO-8859-1.
             $nome = utf8_decode($requestData['nome']);
             $operacao = isset($requestData['operacao']) ? $requestData['operacao'] : '';
@@ -32,11 +32,11 @@
             if($operacao == 'insert'){
 
                 //Prepara o comando sql para executar o INSERT
-                $sql = "INSERT INTO USUARIOS(nome) VALUES ('$nome')";
+                $sql = "INSERT INTO CATEGORIAS(nome) VALUES ('$nome')";
             } else { //Caso contrário, ou qualquer valor diferente de 'insert'
 
                 //Prepara o comando sql para executar o UPDATE
-                $sql = "UPDATE USUARIOS SET nome='$nome' WHERE idcategoria = $idCategoria";
+                $sql = "UPDATE CATEGORIAS SET nome='$nome' WHERE idcategoria = $idCategoria";
             }
 
             //Executa a operação em questão
