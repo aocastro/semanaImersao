@@ -34,7 +34,7 @@
             while($row = mysqli_fetch_assoc($resultado)){
                 //Aplica a função utf8_encode para todos os elementos de row
                 //e adiciona o resultado no array de dados
-                $dadosTipo[] = array_map('utf8_encode', $row);
+                $dadosTipo = array_map('utf8_encode', $row);
             }
             //Define um objeto array para retorno de sucesso
             $dados = array(
