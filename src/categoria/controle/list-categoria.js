@@ -31,9 +31,9 @@ $(document).ready(function() {
                 // Nesta linha iremos chamar a função render que pega os nossos elementos HTML e renderiza juntamente com as informações carregadas do objeto
                 "render": function(data, type, row, meta) {
                     return `
-                            <button id="${data}" class="btn btn-info btn-sm">R</button>
-                            <button id="${data}" class="btn btn-primary btn-sm">U</button>
-                            <button id="${data}" class="btn btn-danger btn-sm">D</button>
+                    <button id="${data}" class="btn btn-info btn-sm btn-view"><i class="mdi mdi-eye"></i></button>
+                    <button id="${data}" class="btn btn-primary btn-sm"><i class="mdi mdi-pencil"></i></button>
+                    <button id="${data}" class="btn btn-danger btn-sm"><i class="mdi mdi-trash-can"></i></button>
                     `
                 }
             }

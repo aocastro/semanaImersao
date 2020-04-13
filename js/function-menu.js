@@ -8,4 +8,9 @@ $(document).ready(function() {
         $('#conteudo').empty()
         $('#conteudo').load('src/usuario/visao/list-usuario.html')
     })
+
+    $('#categoria').click(function() {
+        $('#conteudo').empty()
+        $('#conteudo').load('src/categoria/visao/list-categoria.html')
+    })
 })
