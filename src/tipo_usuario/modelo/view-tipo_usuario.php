@@ -20,7 +20,7 @@
         if($resultado){
 
             $dadosTipo = array();
-            while($row = mysqli_fetch_assoc($resutlado)){
+            while($row = mysqli_fetch_assoc($resultado)){
                 $dadosTipo = array_map('utf8_encode', $row);
             }
 
