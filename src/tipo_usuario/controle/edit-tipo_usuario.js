@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#table-tipo_usuario').on('click', 'button.btn-view', function(e) {
+    $('#table-tipo_usuario').on('click', 'button.btn-edit', function(e) {
 
         e.preventDefault()
 
@@ -22,9 +22,6 @@ $(document).ready(function() {
                 if (dado.tipo == "success") {
                     $('.modal-body').load('src/tipo_usuario/visao/form-tipo-usuario.html', function() {
                         $('#nome').val(dado.dados.nome)
-                        $('#nome').attr('readonly', 'true')
-
-                        $('#tipo').empty()
 
                         var tipo
 
@@ -35,7 +32,8 @@ $(document).ready(function() {
                         }
 
                         $('#tipo').append(`<option value="">${tipo}</option>`)
-                        $('#tipo').attr('readonly', 'true')
+
+                        $('#idtipo_usuario').val(dado.dados.idtipo_usuario)
                     })
 
                     $('#modal-tipo-usuario').modal('show')
