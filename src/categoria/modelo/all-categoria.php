@@ -1,5 +1,6 @@
 <?php
 
+    //Realizar a conexão com o banco de dados
     include('../../conexao/conexao.php');
 
     $dados = array();
