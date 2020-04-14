@@ -27,7 +27,7 @@
             //utf8_decode() - decodifica string, assumido ser codificada em UTF-8, para ISO-8859-1.
             $nome = utf8_decode($requestData['nome']);
             $email = $requestData['email'];
-            $senha = $requestData['senha'];
+            $senha = md5($requestData['senha']);
             $idTipoUsuario = $requestData['idtipo_usuario'];
             $operacao = isset($requestData['operacao']) ? $requestData['operacao'] : '';
 
