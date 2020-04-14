@@ -12,8 +12,14 @@ $(document).ready(function() {
         // Aqui iremos deternimar qual será o título que deverá aparecer no nosso modal
         $('.modal-title').append('<h4 class="text-danger">Nova Notícia</h4>')
 
+        // Aqui iremos criar uma constante para receber a data e hora local da criação da notícia
+        const dataNoticia = new Date().toLocaleString()
+
         // Aqui será inserido o formulário do arquivo que criamos anteriomente na pasta visão onde ficam nossos HTML
-        $('.modal-body').load('src/noticia/visao/form-noticia.html')
+        $('.modal-body').load('src/noticia/visao/form-noticia.html', function() {
+            $('#data_noticia').val(dataNoticia)
+            $('#data_noticia').attr('readonly', 'true')
+        })
 
         // Uma vez que nosso Back-end aguarda os dados do formulário porém também qual o tipo de operação, iremos incluir no botão de salvar uma nova propriedade
         // onde será incluído uma nova propiedade chamada data-operation que não tem aplicação prática em função alguma, porém será útil para
