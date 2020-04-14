@@ -30,6 +30,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `db_blog`.`noticias` (
   `idnoticia` INT NOT NULL AUTO_INCREMENT,
   `data_noticia` DATETIME NOT NULL,
+  `titulo` VARCHAR(255) NOT NULL,
   `corpo` LONGTEXT NOT NULL,
   `imagem` VARCHAR(255) NULL,
   `idcategoria` INT NOT NULL,
