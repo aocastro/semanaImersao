@@ -19,6 +19,16 @@ $(document).ready(function() {
         $('.modal-body').load('src/noticia/visao/form-noticia.html', function() {
             $('#data_noticia').val(dataNoticia)
             $('#data_noticia').attr('readonly', 'true')
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: 'src/categoria/modelo/all-categoria.php',
+                success: function(dados) {
+                    for (const dado of dados) {
+                        $('#idcategoria').append(`<option value="${dado.idcategoria}">${dado.nome}</option>`)
+                    }
+                }
+            })
         })
 
         // Uma vez que nosso Back-end aguarda os dados do formulário porém também qual o tipo de operação, iremos incluir no botão de salvar uma nova propriedade
