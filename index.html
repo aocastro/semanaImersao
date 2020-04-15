@@ -7,6 +7,7 @@
     <title>Blog - Semana de Imersão</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="libs/sweetalert2/dist/sweetalert2.css">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
         <div id="menu" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Início</a>
+                    <a class="nav-link text-white" id="initial">Início</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">Notícias</a>
@@ -33,15 +34,22 @@
                     <a class="nav-link text-white" href="#">Categorias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Assine</a>
+                    <a class="nav-link text-white" id="subscript">Assine</a>
                 </li>
             </ul>
         </div>
     </nav>
 
 
+    <div id="content" class="container">
+
+    </div>
+
+
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/function-menu.js"></script>
+    <script src="libs/sweetalert2/dist/sweetalert2.js"></script>
 </body>
 
 </html>
