@@ -25,10 +25,10 @@ $(document).ready(function() {
 
 
     // Aqui inicia as funcionalidades do menu do BLOG
-    $('#content').load('src/noticia/visao/blog-list-noticia.html')
+    $('#content').load('src/noticia/visao/last-noticia.html')
 
     $('#initial').click(function() {
-        $('#content').load('src/noticia/visao/blog-list-noticia.html')
+        $('#content').load('src/noticia/visao/last-noticia.html')
     })
 
     $('#subscript').click(function() {
