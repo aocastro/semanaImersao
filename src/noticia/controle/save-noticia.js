@@ -5,8 +5,6 @@ $(document).ready(function() {
 
         var dados = new FormData(document.getElementById('form-noticia'))
 
-        // dados += `&operacao=${$('.btn-save').attr('data-operation')}`
-
         dados.append("operacao", $('.btn-save').attr('data-operation'))
 
         console.log(dados)
@@ -30,7 +28,7 @@ $(document).ready(function() {
 
                 // Fechamento do modal
                 $('#modal-noticia').modal('hide')
-                    // $('#table-usuario').DataTable().ajax.reload()
+                $('#table-noticia').DataTable().ajax.reload()
             }
         })
     })

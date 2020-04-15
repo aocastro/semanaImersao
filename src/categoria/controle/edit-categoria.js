@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#table-categoria').on('click', 'button.btn-view', function(e) {
+    $('#table-categoria').on('click', 'button.btn-edit', function(e) {
 
         e.preventDefault()
 
@@ -8,7 +8,7 @@ $(document).ready(function() {
         $('.modal-title').empty()
         $('.modal-body').empty()
 
-        $('.modal-title').append('<h4 class="text-danger">Visualizar Categoria</h4>')
+        $('.modal-title').append('<h4 class="text-danger">Editar Categoria</h4>')
 
         let idcategoria = `idcategoria=${$(this).attr('id')}`
 
@@ -22,8 +22,7 @@ $(document).ready(function() {
                 if (dado.tipo == "success") {
                     $('.modal-body').load('src/categoria/visao/form-categoria.html', function() {
                         $('#nome').val(dado.dados.nome)
-                        $('#nome').attr('readonly', 'true')
-
+                        $('#idcategoria').val(dado.dados.idcategoria)
                     })
 
                     $('#modal-categoria').modal('show')
