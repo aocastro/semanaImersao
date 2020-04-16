@@ -31,6 +31,10 @@ $(document).ready(function() {
         $('#content').load('src/noticia/visao/last-noticia.html')
     })
 
+    $('#news').click(function() {
+        $('#content').load('src/noticia/visao/all-noticia.html')
+    })
+
     $('#subscript').click(function() {
         $('#content').load('src/usuario/visao/form-usuario.html', function() {
             $('#form-usuario').before(`<h1 class="text-center mt-4">Cadastro de Leitor</h1>`)
