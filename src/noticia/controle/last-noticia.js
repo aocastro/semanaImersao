@@ -12,8 +12,9 @@ $(document).ready(function() {
                         <img class="img-fluid" src="src/noticia/modelo/${dado.imagem}">
                         <h6>${dado.data_noticia}</h6>
                         <h3>${dado.titulo}</h3>
+                        <h6>${dado.categoria}</h6>
                         <p>${dado.corpo.substring(0, 200)}...</p>
-                        <button id="${dado.idnoticia}" class="btn btn-primary btn-sm btn-view"><i class="mdi mdi-plus-circle"></i> detalhe</button>
+                        <button id="${dado.idnoticia}" class="btn btn-primary btn-sm btn-view"><i class="mdi mdi-plus-circle"></i> Ler mais...</button>
                     </div>
                 `)
             }

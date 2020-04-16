@@ -1,3 +1,8 @@
+body {
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
 .mt-n1 {
     margin-top: -0.25rem !important;
 }
