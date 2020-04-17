@@ -89,12 +89,12 @@ CREATE TABLE IF NOT EXISTS `db_blog`.`comentarios` (
   CONSTRAINT `fk_usuarios_has_noticias_usuarios1`
     FOREIGN KEY (`idusuario`)
     REFERENCES `db_blog`.`usuarios` (`idusuario`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuarios_has_noticias_noticias1`
     FOREIGN KEY (`idnoticia`)
     REFERENCES `db_blog`.`noticias` (`idnoticia`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
