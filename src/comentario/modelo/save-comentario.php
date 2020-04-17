@@ -27,7 +27,7 @@
             //utf8_decode() - decodifica string, assumido ser codificada em UTF-8, para ISO-8859-1.
             $comentario = preg_replace("/(\\r)?\\n/i", "<br/>", $requestData['comentario']);
             $comentario = utf8_decode($comentario);
-            $dataComentario = str_replace('/','-',$requestData['data_noticia']);
+            $dataComentario = str_replace('/','-',$requestData['data_comentario']);
             $dataComentario = date('Y-m-d H:i:s', strtotime($dataComentario));
             $idNoticia = $requestData['idnoticia'];
             $idUsuario = $requestData['idusuario'];
