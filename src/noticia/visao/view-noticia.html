@@ -1,5 +1,56 @@
-<div class="row">
+<div id="eye-noticia" class="row">
     <div id="view-noticia" class="offset-md-1 col-md-10 col-12">
 
     </div>
 </div>
+
+<!-- Início da listagem de comentários da notícia -->
+<div id="list-comentario" class="row mt-2">
+    <div class="offset-md-1 col-md-10 col-12 mb-2">
+        <div class="alert-info form-control-lg">
+            <div class="row">
+                <div class="col-md-9 col-12">
+                    Comentários da notícia
+                </div>
+                <div class="col-md-3 col-12">
+                    <button class="btn btn-outline-primary btn-sm btn-block btn-new"><i class="mdi mdi-plus-circle"></i> Novo Comentário</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offset-md-1 col-md-10 col-12 border-bottom">
+        <p class="text-justify text-dark">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad dolores placeat tempore dignissimos totam dolorum repellat consequuntur! Eius dolore sunt odit doloremque ipsam illo voluptatibus possimus autem fuga expedita.
+        </p>
+        <p>Publicado por: Usuário X, em 00/00/00 - 00:00:00</p>
+    </div>
+    <div class="offset-md-1 col-md-10 col-12 border-bottom">
+        <p class="text-justify text-dark">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad dolores placeat tempore dignissimos totam dolorum repellat consequuntur! Eius dolore sunt odit doloremque ipsam illo voluptatibus possimus autem fuga expedita.
+        </p>
+        <p>Publicado por: Usuário X, em 00/00/00 - 00:00:00</p>
+    </div>
+</div>
+
+<!-- Modal do comentário -->
+
+<div id="modal-comentario" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <h4 class="text-danger">Cadastro de comentário</h4>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Content</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="mdi mdi-close-circle"></i> Fechar</button>
+                <button type="button" class="btn btn-primary btn-save"><i class="mdi mdi-content-save"></i> Salvar mudanças</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="src/comentario/controle/new-comentario.js"></script>

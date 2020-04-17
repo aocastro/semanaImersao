@@ -4,7 +4,7 @@ $(document).ready(function() {
 
         e.preventDefault()
 
-        var idnoticia = `idnoticia=${$('.btn-view').attr('id')}`
+        var idnoticia = `idnoticia=${$(this).attr('id')}`
 
         $('#content').load('src/noticia/visao/view-noticia.html', function() {
 
