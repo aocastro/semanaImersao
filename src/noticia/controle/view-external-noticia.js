@@ -6,6 +6,8 @@ $(document).ready(function() {
 
         var idnoticia = `idnoticia=${$('.btn-view').attr('id')}`
 
+        console.log(idnoticia)
+
         $('#content').load('src/noticia/visao/view-noticia.html', function() {
 
             $.ajax({
